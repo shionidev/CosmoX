@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F074CB6902F7D9B99B38805 /* libmonobdwgc-2.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 28F54E0D88742B922626F303 /* libmonobdwgc-2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33764CE984FBC26CB5616947 /* libMonoPosixHelper.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08C94FE9B63A3648051F5364 /* libMonoPosixHelper.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4AC046A4AE8F2A7C25B17488 /* libmonobdwgc-2.0.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5BD4B01A24CAB7FDC9C310C /* libmonobdwgc-2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		750575B4214B38CE004B1B34 /* UnityPlayer.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 750575B3214B38CE004B1B34 /* UnityPlayer.dylib */; };
 		750575B5214B3DF2004B1B34 /* UnityPlayer.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 750575B3214B38CE004B1B34 /* UnityPlayer.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		752CA83E2149E6C400295EFC /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 752CA83D2149E6C400295EFC /* Main.cpp */; };
@@ -15,24 +16,12 @@
 		75E7179121715210002B2479 /* DefaultPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75E7178E21715210002B2479 /* DefaultPreferences.plist */; };
 		75E7179221715210002B2479 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 75E7178F21715210002B2479 /* Data */; };
 		75E7179321715210002B2479 /* PlayerIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 75E7179021715210002B2479 /* PlayerIcon.icns */; };
-		A4D94827B7B5565A0E574B15 /* MonoBleedingEdge in CopyFiles */ = {isa = PBXBuildFile; fileRef = B1AC4100AB3A8E4B059B0F70 /* MonoBleedingEdge */; };
-		AA194DB2B518B9FA6C6393D6 /* libmono-native.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23474A2284890711799E441C /* libmono-native.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		79EA4D3E9F7AF609F5020056 /* libmono-native.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90BC46BA8DA7F67790C06066 /* libmono-native.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDD5792C240E027400DEA632 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = CDD5792B240E027400DEA632 /* MainMenu.nib */; };
-		CEA34DF8BBE1A31697ED2B80 /* libMonoPosixHelper.dylib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D19847E0A38ACDD4D693C87A /* libMonoPosixHelper.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0A7423FAA23415FB2FC8D2E /* MonoBleedingEdge in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44D74ADBA7BF52DAC0F4D79A /* MonoBleedingEdge */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0A1647EE91D5967113C072F1 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Contents;
-			dstSubfolderSpec = 1;
-			files = (
-				A4D94827B7B5565A0E574B15 /* MonoBleedingEdge in CopyFiles */,
-			);
-			name = CopyFiles;
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		750575B6214B3DF2004B1B34 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,24 +33,35 @@
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F504499DAE516F49FDE562CD /* Embed Frameworks */ = {
+		CFA94D7EB747665069E607BC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F074CB6902F7D9B99B38805 /* libmonobdwgc-2.0.dylib in Embed Frameworks */,
-				CEA34DF8BBE1A31697ED2B80 /* libMonoPosixHelper.dylib in Embed Frameworks */,
-				AA194DB2B518B9FA6C6393D6 /* libmono-native.dylib in Embed Frameworks */,
+				4AC046A4AE8F2A7C25B17488 /* libmonobdwgc-2.0.dylib in Embed Frameworks */,
+				33764CE984FBC26CB5616947 /* libMonoPosixHelper.dylib in Embed Frameworks */,
+				79EA4D3E9F7AF609F5020056 /* libmono-native.dylib in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0C94AB7B0C7A20D81EBE75A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents;
+			dstSubfolderSpec = 1;
+			files = (
+				E0A7423FAA23415FB2FC8D2E /* MonoBleedingEdge in CopyFiles */,
+			);
+			name = CopyFiles;
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		23474A2284890711799E441C /* libmono-native.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libmono-native.dylib"; path = "CosmoX/Frameworks/libmono-native.dylib"; sourceTree = SOURCE_ROOT; };
-		28F54E0D88742B922626F303 /* libmonobdwgc-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libmonobdwgc-2.0.dylib"; path = "CosmoX/Frameworks/libmonobdwgc-2.0.dylib"; sourceTree = SOURCE_ROOT; };
+		08C94FE9B63A3648051F5364 /* libMonoPosixHelper.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMonoPosixHelper.dylib; path = CosmoX/Frameworks/libMonoPosixHelper.dylib; sourceTree = SOURCE_ROOT; };
+		44D74ADBA7BF52DAC0F4D79A /* MonoBleedingEdge */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MonoBleedingEdge; path = CosmoX/MonoBleedingEdge; sourceTree = SOURCE_ROOT; };
 		750575B3214B38CE004B1B34 /* UnityPlayer.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = UnityPlayer.dylib; path = CosmoX/Frameworks/UnityPlayer.dylib; sourceTree = "<group>"; };
 		752CA8282149E6C100295EFC /* CosmoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		752CA83C2149E6C400295EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,9 +70,9 @@
 		75E7178E21715210002B2479 /* DefaultPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DefaultPreferences.plist; path = CosmoX/Resources/DefaultPreferences.plist; sourceTree = "<group>"; };
 		75E7178F21715210002B2479 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Data; path = CosmoX/Resources/Data; sourceTree = "<group>"; };
 		75E7179021715210002B2479 /* PlayerIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PlayerIcon.icns; path = CosmoX/Resources/PlayerIcon.icns; sourceTree = "<group>"; };
-		B1AC4100AB3A8E4B059B0F70 /* MonoBleedingEdge */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MonoBleedingEdge; path = CosmoX/MonoBleedingEdge; sourceTree = SOURCE_ROOT; };
+		90BC46BA8DA7F67790C06066 /* libmono-native.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libmono-native.dylib"; path = "CosmoX/Frameworks/libmono-native.dylib"; sourceTree = SOURCE_ROOT; };
+		A5BD4B01A24CAB7FDC9C310C /* libmonobdwgc-2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libmonobdwgc-2.0.dylib"; path = "CosmoX/Frameworks/libmonobdwgc-2.0.dylib"; sourceTree = SOURCE_ROOT; };
 		CDD5792B240E027400DEA632 /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = MainMenu.nib; path = CosmoX/Resources/MainMenu.nib; sourceTree = "<group>"; };
-		D19847E0A38ACDD4D693C87A /* libMonoPosixHelper.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libMonoPosixHelper.dylib; path = CosmoX/Frameworks/libMonoPosixHelper.dylib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 			children = (
 				752CA83C2149E6C400295EFC /* Info.plist */,
 				752CA83D2149E6C400295EFC /* Main.cpp */,
-				F3654BA699837564B4EA8CAF /* Frameworks */,
-				B1AC4100AB3A8E4B059B0F70 /* MonoBleedingEdge */,
+				A40643D3A02E4CC74ABB07C5 /* Frameworks */,
+				44D74ADBA7BF52DAC0F4D79A /* MonoBleedingEdge */,
 			);
 			path = CosmoX;
 			sourceTree = "<group>";
@@ -136,12 +136,12 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		F3654BA699837564B4EA8CAF /* Frameworks */ = {
+		A40643D3A02E4CC74ABB07C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28F54E0D88742B922626F303 /* libmonobdwgc-2.0.dylib */,
-				D19847E0A38ACDD4D693C87A /* libMonoPosixHelper.dylib */,
-				23474A2284890711799E441C /* libmono-native.dylib */,
+				A5BD4B01A24CAB7FDC9C310C /* libmonobdwgc-2.0.dylib */,
+				08C94FE9B63A3648051F5364 /* libMonoPosixHelper.dylib */,
+				90BC46BA8DA7F67790C06066 /* libmono-native.dylib */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -157,8 +157,8 @@
 				752CA8252149E6C100295EFC /* Frameworks */,
 				752CA8262149E6C100295EFC /* Resources */,
 				750575B6214B3DF2004B1B34 /* Embed Libraries */,
-				F504499DAE516F49FDE562CD /* Embed Frameworks */,
-				0A1647EE91D5967113C072F1 /* CopyFiles */,
+				CFA94D7EB747665069E607BC /* Embed Frameworks */,
+				E0C94AB7B0C7A20D81EBE75A /* CopyFiles */,
 			);
 			buildRules = (
 			);
