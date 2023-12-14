@@ -7,7 +7,7 @@
     <key>CFBundleExecutable</key>
     <string>CosmoX</string>
     <key>CFBundleGetInfoString</key>
-    <string>Unity Player version 2021.3.14f1 (eee1884e7226). (c) 2022 Unity Technologies ApS. All rights reserved.</string>
+    <string>Unity Player version 2022.3.15f1 (b58023a2b463). (c) 2005-2023 Unity Technologies. All rights reserved.</string>
     <key>CFBundleIconFile</key>
     <string>PlayerIcon.icns</string>
     <key>CFBundleIdentifier</key>
@@ -40,6 +40,6 @@
     <key>NSPrincipalClass</key>
     <string>PlayerApplication</string>
     <key>UnityBuildNumber</key>
-    <string>eee1884e7226</string>
+    <string>b58023a2b463</string>
   </dict>
 </plist>
