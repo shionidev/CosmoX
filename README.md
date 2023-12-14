@@ -19,6 +19,3 @@ Notably, CosmoX is optimized to run smoothly on low-end PCs, ensuring that playe
 ## Support
 
 For support, email devcore9studio@gmail.com for more information or visit https://www.devcore9-ssl.com
-
-## API
-https://lunarapi.vercel.app
