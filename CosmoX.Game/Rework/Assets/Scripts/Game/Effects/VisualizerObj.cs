@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be4302707b2273248dcbe0792f153c360e29f3adda9b4ac6d4c692a69a436bab
-size 297
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class VisualizerObj : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}

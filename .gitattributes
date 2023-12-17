@@ -1,2 +1,0 @@
-*.cs filter=lfs diff=lfs merge=lfs -text
-*.Folder filter=lfs diff=lfs merge=lfs -text
