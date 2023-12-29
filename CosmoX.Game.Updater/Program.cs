@@ -4,6 +4,8 @@ using System.IO;
 using System.Threading;
 using Hexium.Collections.Management;
 using Hexium.Application.Diagnostics;
+using CosmoX.Game;
+using CosmoX.Desktop;
 
 class Program
 {
