@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 
-public class LoadUpdater : MonoBehaviour
+public class InitializeUpdater : MonoBehaviour
 {
     public TMP_Text textComponent;
     public GameObject Interface; // Reference to the loading UI GameObject
