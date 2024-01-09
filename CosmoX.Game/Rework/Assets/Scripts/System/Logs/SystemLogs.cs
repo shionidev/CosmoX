@@ -56,4 +56,9 @@ public class SystemLogs : MonoBehaviour
     // Warning Information System Logs
 
     // Error Information System Logs
+
+    public void OnFailedToConnect()
+    {
+        Debug.LogError("Failed to connect to the server");
+    }
 }
