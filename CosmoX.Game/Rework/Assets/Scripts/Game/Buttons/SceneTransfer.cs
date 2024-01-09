@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4fa2b3cd9d90caf086ac1dd966d7add90dff8eb50cb35e65ff2696914fda9ba
-size 650
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
+using System.Threading;
+
+public class SceneTransfer : MonoBehaviour
+{
+    public string SelectedLevel;
+    public GameObject FinalCut;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        FinalCut.SetActive(false);
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void ChangingSceneToMainScene()
+    {
+        FinalCut.SetActive(true);
+        SceneManager.LoadScene(SelectedLevel);
+        Thread.Sleep(2000);
+    }
+}
