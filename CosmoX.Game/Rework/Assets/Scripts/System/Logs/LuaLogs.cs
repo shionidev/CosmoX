@@ -7,7 +7,7 @@ using System.Configuration;
 public class LuaLogs : MonoBehaviour
 {
     // Classic Information System Logs
-    public void IsRunningLua()
+    void Start()
     {
         Debug.Log("Lua is running...");
     }

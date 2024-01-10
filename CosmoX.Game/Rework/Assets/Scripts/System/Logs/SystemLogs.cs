@@ -3,9 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Net;
 using System.Configuration;
+using JetBrains.Annotations;
+using Palmmedia.ReportGenerator.Core.Parser.Analysis;
+using System.Diagnostics.Eventing.Reader;
+using RiptideNetworking;
+using UnityEditor.Experimental.Rendering;
 
 public class SystemLogs : MonoBehaviour
 {
+    public static class Logger
+    {
+        public static void Log(string message)
+        {
+            Debug.Log(message);
+        }
+
+        public static void LogFromMethod(MonoBehaviour script, string methodName)
+        {
+            if (script != null)
+            {
+                System.Reflection.MethodInfo method = script.GetType().GetMethod(methodName);
+                if (method != null)
+                {
+                    method.Invoke(script, null);
+                }
+                else
+                {
+                    Debug.LogWarning($"Method '{methodName}' not found in script '{script.GetType().Name}'.");
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Script instance is null.");
+            }
+        }
+    }
+
     // Classic Information System Logs
     public void IsClicked()
     {
@@ -51,6 +84,16 @@ public class SystemLogs : MonoBehaviour
     {
         Debug.Log("The skin has been refreshed...");
         Debug.Log("?/01o");
+    }
+
+    public void IsCheckingVersion()
+    {
+        Debug.Log("Checking your client version");
+    }
+
+    public void IsUpToDate()
+    {
+        Debug.Log("Client version has been checked");
     }
 
     // Warning Information System Logs
