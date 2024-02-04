@@ -8,6 +8,7 @@ using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using System.Diagnostics.Eventing.Reader;
 using RiptideNetworking;
 using UnityEditor.Experimental.Rendering;
+using System.Threading;
 
 public class SystemLogs : MonoBehaviour
 {
@@ -94,6 +95,13 @@ public class SystemLogs : MonoBehaviour
     public void IsUpToDate()
     {
         Debug.Log("Client version has been checked");
+    }
+
+    public void IsCopying()
+    {
+        Debug.Log("Copying...");
+        Thread.Sleep(2000);
+        Debug.Log("Copied!");
     }
 
     // Warning Information System Logs
