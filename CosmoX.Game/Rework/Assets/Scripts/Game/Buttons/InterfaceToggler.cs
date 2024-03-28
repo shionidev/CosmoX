@@ -8,15 +8,37 @@ public class InterfaceToggler : MonoBehaviour
 {
 
     public GameObject ActivateInterface;
-    public GameObject DectivateInterface;
+    public GameObject DeactivateInterface;
+    public GameObject CutScene;
+    public GameObject OnlyInterface;
     public void Open()
     {
         ActivateInterface.SetActive(true);
-        DectivateInterface.SetActive(false);
+        DeactivateInterface.SetActive(false);
     }
     public void Close()
     {
         ActivateInterface.SetActive(false);
-        DectivateInterface.SetActive(true);
+        DeactivateInterface.SetActive(true);
+    }
+
+    public void CutActivate()
+    {
+        CutScene.SetActive(true);
+    }
+
+    public void CutDeactivate()
+    {
+        CutScene.SetActive(false);
+    }
+
+    public void OnlyInterfaceActivate()
+    {
+        OnlyInterface.SetActive(true);
+    }
+
+    public void OnlyInterfaceDeactivate()
+    {
+        OnlyInterface.SetActive(false);
     }
 }
