@@ -1,7 +1,7 @@
 
 # Lyrica
 
-# Lyrica is an exciting rhythm game, inspired by mania-style gameplay, offering players an engaging and immersive experience. The game stands out by being free to play with absolutely no pay-to-win elements, ensuring a fair and enjoyable environment for all players.
+Lyrica is an exciting rhythm game, inspired by mania-style gameplay, offering players an engaging and immersive experience. The game stands out by being free to play with absolutely no pay-to-win elements, ensuring a fair and enjoyable environment for all players.
 
 One of the highlights of CosmoX is its extensive range of in-game features. First, the game boasts a variety of skins that players can customize to personalize their gameplay experience. These skins not only alter the game's visual appearance but can also enhance the overall gaming atmosphere.
 
